@@ -1,0 +1,27 @@
+{
+  "name": "magik-muzak",
+  "version": "1.0.0",
+  "scripts": {
+    "test": "vitest run",
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "lint": "eslint .",
+    "test:e2e": "playwright test"
+  },
+  "license": "MIT",
+  "type": "module",
+  "private": true,
+  "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "@playwright/test": "^1.65.0",
+    "@vitest/browser-playwright": "^5.1.0",
+    "eslint": "^10.14.0",
+    "globals": "^17.14.0",
+    "vite": "^8.3.8",
+    "vitest": "^5.1.0"
+  },
+  "engines": {
+    "node": ">=24"
+  }
+}

@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>magik-muzak</title>
+    <link
+      rel="icon"
+      href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'><circle cx='8' cy='8' r='7' fill='%2305060a'/><circle cx='8' cy='8' r='3' fill='%23c9d1e0'/></svg>"
+    />
+    <style>
+      html,
+      body {
+        margin: 0;
+        height: 100%;
+        overflow: hidden;
+        background: #05060a;
+        color: #c9d1e0;
+        font: 16px/1.4 system-ui, sans-serif;
+        cursor: crosshair;
+      }
+
+      #hint {
+        position: fixed;
+        inset: auto 0 2rem;
+        margin: 0;
+        text-align: center;
+        letter-spacing: 0.05em;
+        opacity: 0.8;
+        pointer-events: none;
+      }
+
+      #hint[hidden] {
+        display: none;
+      }
+    </style>
+  </head>
+  <body data-state="idle">
+    <p id="hint" role="status" aria-live="polite">Press Space to begin</p>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>

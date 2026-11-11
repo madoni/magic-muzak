@@ -1,0 +1,20 @@
+// Levels are dBFS of the final output; times are in seconds.
+export const SAFETY = Object.freeze({
+  masterCeiling: 0.5,
+  reportInterval: 0.05,
+  floorDb: -100,
+  peakLimit: 0.95,
+  rmsCeilingDb: -10,
+  sustainTime: 0.3,
+  jumpDb: 12,
+  jumpWindow: 0.2,
+  jumpFloorDb: -16,
+  creepWindow: 5,
+  creepBins: 5,
+  creepStepDb: 0.5,
+  creepCeilingDb: -16,
+  tripFade: 0.1,
+  startTimeConstant: 0.3,
+  muteTimeConstant: 0.015,
+  unmuteTimeConstant: 0.3,
+});
